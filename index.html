@@ -1,13 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>welcome to the amazing world of github</h1>
-    <p>github helps in version control and to keep track of changes made to our code!</p>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="ionicons.min.css">
+        <link rel="stylesheet" href="UI Figma Designs\Design 1\ionicons.designerpack">
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="child-two">
+                <aside class="inner-child-one .col-s-3">
+                    <nav class="overlay" id="overlay-nav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <div class="picture">
+                            
+                            <img src="mypicture.jpeg" alt="Profile picture of user" title="click for full view">
+                            <p>Winnie Alukwu<br/><span>@WinnieCodes</span></p>
+                        </div>
+                    
+                        <div class="links" id="links">
+
+                            <a href="#general"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.6667 10.6667H21.3333V21.3333H10.6667V10.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24 5.33333H7.99999C6.52724 5.33333 5.33333 6.52724 5.33333 8V24C5.33333 25.4728 6.52724 26.6667 7.99999 26.6667H24C25.4728 26.6667 26.6667 25.4728 26.6667 24V8C26.6667 6.52724 25.4728 5.33333 24 5.33333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>General
+                            </a>
+                            
+                            <a href="#password"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.6667 14.6667H9.33334C7.86058 14.6667 6.66667 15.8606 6.66667 17.3333V25.3333C6.66667 26.8061 7.86058 28 9.33334 28H22.6667C24.1394 28 25.3333 26.8061 25.3333 25.3333V17.3333C25.3333 15.8606 24.1394 14.6667 22.6667 14.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 22.6667C16.7364 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7364 20 16 20C15.2636 20 14.6667 20.597 14.6667 21.3333C14.6667 22.0697 15.2636 22.6667 16 22.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6667 14.6667V9.33333C10.6667 7.91885 11.2286 6.56229 12.2288 5.5621C13.229 4.5619 14.5855 4 16 4C17.4145 4 18.771 4.5619 19.7712 5.5621C20.7714 6.56229 21.3333 7.91885 21.3333 9.33333V14.6667" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Password
+                            </a>
+                            
+                            <a href="#invitations"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3333 6.66666H6.66667C5.19391 6.66666 4 7.86057 4 9.33333V22.6667C4 24.1394 5.19391 25.3333 6.66667 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V9.33333C28 7.86057 26.8061 6.66666 25.3333 6.66666Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4 9.33334L16 17.3333L28 9.33334" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Invitations
+                            </a>
+                            
+                            <a href="#billing"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M25.3333 12H12C10.5272 12 9.33333 13.1939 9.33333 14.6667V22.6667C9.33333 24.1394 10.5272 25.3333 12 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V14.6667C28 13.1939 26.8061 12 25.3333 12Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M25.3333 12H12C10.5272 12 9.33333 13.1939 9.33333 14.6667V22.6667C9.33333 24.1394 10.5272 25.3333 12 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V14.6667C28 13.1939 26.8061 12 25.3333 12Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.6667 21.3333C20.1394 21.3333 21.3333 20.1394 21.3333 18.6667C21.3333 17.1939 20.1394 16 18.6667 16C17.1939 16 16 17.1939 16 18.6667C16 20.1394 17.1939 21.3333 18.6667 21.3333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.6667 21.3333C20.1394 21.3333 21.3333 20.1394 21.3333 18.6667C21.3333 17.1939 20.1394 16 18.6667 16C17.1939 16 16 17.1939 16 18.6667C16 20.1394 17.1939 21.3333 18.6667 21.3333Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6667 12V9.33334C22.6667 8.62609 22.3857 7.94782 21.8856 7.44772C21.3855 6.94762 20.7072 6.66667 20 6.66667H6.66667C5.95942 6.66667 5.28115 6.94762 4.78105 7.44772C4.28095 7.94782 4 8.62609 4 9.33334V17.3333C4 18.0406 4.28095 18.7189 4.78105 19.219C5.28115 19.7191 5.95942 20 6.66667 20H9.33333" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22.6667 12V9.33334C22.6667 8.62609 22.3857 7.94782 21.8856 7.44772C21.3855 6.94762 20.7072 6.66667 20 6.66667H6.66667C5.95942 6.66667 5.28115 6.94762 4.78105 7.44772C4.28095 7.94782 4 8.62609 4 9.33334V17.3333C4 18.0406 4.28095 18.7189 4.78105 19.219C5.28115 19.7191 5.95942 20 6.66667 20H9.33333" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Billing
+                            </a>
+                            
+                            <a href="#apps"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24 5.33333H7.99999C6.52724 5.33333 5.33333 6.52724 5.33333 7.99999V24C5.33333 25.4728 6.52724 26.6667 7.99999 26.6667H24C25.4728 26.6667 26.6667 25.4728 26.6667 24V7.99999C26.6667 6.52724 25.4728 5.33333 24 5.33333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6667 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6667 16V16.0133" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.6667 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3333 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3333 16V16.0133" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.3333 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Apps
+                            </a>
+                        </div>
+                        <div class="logout">
+                            <a href="#logout" id="logout"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.6667 10.6666V7.99998C18.6667 7.29274 18.3857 6.61446 17.8856 6.11436C17.3855 5.61426 16.7072 5.33331 16 5.33331H6.66667C5.95942 5.33331 5.28115 5.61426 4.78105 6.11436C4.28095 6.61446 4 7.29274 4 7.99998V24C4 24.7072 4.28095 25.3855 4.78105 25.8856C5.28115 26.3857 5.95942 26.6666 6.66667 26.6666H16C16.7072 26.6666 17.3855 26.3857 17.8856 25.8856C18.3857 25.3855 18.6667 24.7072 18.6667 24V21.3333" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.33334 16H28M28 16L24 12M28 16L24 20" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Log out
+                            </a>
+                        </div>
+                    </nav>
+                    
+                </aside>
+                <div class="sub-container">
+                    <div class="child-one"></div>
+                    <main class="inner-child-two">
+
+                        <nav class="big-screen-nav">
+                            <div class="picture2">
+                                
+                                <img src="mypicture.jpeg" alt="Profile picture of user" title="click for full view">
+                                <p>Winnie Alukwu<br/><span>@WinnieCodes</span></p>
+                            </div>
+                        
+                            <div class="links2" id="links2">
+
+                                <a href="#general2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.6667 10.6667H21.3333V21.3333H10.6667V10.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M24 5.33333H7.99999C6.52724 5.33333 5.33333 6.52724 5.33333 8V24C5.33333 25.4728 6.52724 26.6667 7.99999 26.6667H24C25.4728 26.6667 26.6667 25.4728 26.6667 24V8C26.6667 6.52724 25.4728 5.33333 24 5.33333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>General
+                                </a>
+                                
+                                <a href="#password2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.6667 14.6667H9.33334C7.86058 14.6667 6.66667 15.8606 6.66667 17.3333V25.3333C6.66667 26.8061 7.86058 28 9.33334 28H22.6667C24.1394 28 25.3333 26.8061 25.3333 25.3333V17.3333C25.3333 15.8606 24.1394 14.6667 22.6667 14.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 22.6667C16.7364 22.6667 17.3333 22.0697 17.3333 21.3333C17.3333 20.597 16.7364 20 16 20C15.2636 20 14.6667 20.597 14.6667 21.3333C14.6667 22.0697 15.2636 22.6667 16 22.6667Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6667 14.6667V9.33333C10.6667 7.91885 11.2286 6.56229 12.2288 5.5621C13.229 4.5619 14.5855 4 16 4C17.4145 4 18.771 4.5619 19.7712 5.5621C20.7714 6.56229 21.3333 7.91885 21.3333 9.33333V14.6667" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Password
+                                </a>
+                                
+                                <a href="#invitations2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.3333 6.66666H6.66667C5.19391 6.66666 4 7.86057 4 9.33333V22.6667C4 24.1394 5.19391 25.3333 6.66667 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V9.33333C28 7.86057 26.8061 6.66666 25.3333 6.66666Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 9.33334L16 17.3333L28 9.33334" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Invitations
+                                </a>
+                                
+                                <a href="#billing2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.3333 12H12C10.5272 12 9.33333 13.1939 9.33333 14.6667V22.6667C9.33333 24.1394 10.5272 25.3333 12 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V14.6667C28 13.1939 26.8061 12 25.3333 12Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M25.3333 12H12C10.5272 12 9.33333 13.1939 9.33333 14.6667V22.6667C9.33333 24.1394 10.5272 25.3333 12 25.3333H25.3333C26.8061 25.3333 28 24.1394 28 22.6667V14.6667C28 13.1939 26.8061 12 25.3333 12Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.6667 21.3333C20.1394 21.3333 21.3333 20.1394 21.3333 18.6667C21.3333 17.1939 20.1394 16 18.6667 16C17.1939 16 16 17.1939 16 18.6667C16 20.1394 17.1939 21.3333 18.6667 21.3333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.6667 21.3333C20.1394 21.3333 21.3333 20.1394 21.3333 18.6667C21.3333 17.1939 20.1394 16 18.6667 16C17.1939 16 16 17.1939 16 18.6667C16 20.1394 17.1939 21.3333 18.6667 21.3333Z" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.6667 12V9.33334C22.6667 8.62609 22.3857 7.94782 21.8856 7.44772C21.3855 6.94762 20.7072 6.66667 20 6.66667H6.66667C5.95942 6.66667 5.28115 6.94762 4.78105 7.44772C4.28095 7.94782 4 8.62609 4 9.33334V17.3333C4 18.0406 4.28095 18.7189 4.78105 19.219C5.28115 19.7191 5.95942 20 6.66667 20H9.33333" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.6667 12V9.33334C22.6667 8.62609 22.3857 7.94782 21.8856 7.44772C21.3855 6.94762 20.7072 6.66667 20 6.66667H6.66667C5.95942 6.66667 5.28115 6.94762 4.78105 7.44772C4.28095 7.94782 4 8.62609 4 9.33334V17.3333C4 18.0406 4.28095 18.7189 4.78105 19.219C5.28115 19.7191 5.95942 20 6.66667 20H9.33333" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Billing
+                                </a>
+                                
+                                <a href="#apps2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M24 5.33333H7.99999C6.52724 5.33333 5.33333 6.52724 5.33333 7.99999V24C5.33333 25.4728 6.52724 26.6667 7.99999 26.6667H24C25.4728 26.6667 26.6667 25.4728 26.6667 24V7.99999C26.6667 6.52724 25.4728 5.33333 24 5.33333Z" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6667 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6667 16V16.0133" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.6667 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.3333 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.3333 16V16.0133" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.3333 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 10.6667V10.68" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16 21.3333V21.3467" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Apps
+                                </a>
+                            </div>
+                            <div class="logout2">
+                                <a href="#logout2" id="logout2"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.6667 10.6666V7.99998C18.6667 7.29274 18.3857 6.61446 17.8856 6.11436C17.3855 5.61426 16.7072 5.33331 16 5.33331H6.66667C5.95942 5.33331 5.28115 5.61426 4.78105 6.11436C4.28095 6.61446 4 7.29274 4 7.99998V24C4 24.7072 4.28095 25.3855 4.78105 25.8856C5.28115 26.3857 5.95942 26.6666 6.66667 26.6666H16C16.7072 26.6666 17.3855 26.3857 17.8856 25.8856C18.3857 25.3855 18.6667 24.7072 18.6667 24V21.3333" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.33334 16H28M28 16L24 12M28 16L24 20" stroke="#62618F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    Log out
+                                </a>
+                            </div>
+                        </nav>
+                        <div class="the-main">
+                            <div class="main-1">
+                                <header class="open-menu">
+                                    <h2>Billing</h2>
+                                    <p onclick="openNav()"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                        width="30" height="30" viewBox="0 0 48 48" style=" fill:#FFFFFF;">
+                                        <path d="M 5.5 9 A 1.50015 1.50015 0 1 0 5.5 12 L 42.5 12 A 1.50015 1.50015 0 1 0 42.5 9 L 5.5 9 z M 5.5 22.5 A 1.50015 1.50015 0 1 0 5.5 25.5 L 42.5 25.5 A 1.50015 1.50015 0 1 0 42.5 22.5 L 5.5 22.5 z M 5.5 36 A 1.50015 1.50015 0 1 0 5.5 39 L 42.5 39 A 1.50015 1.50015 0 1 0 42.5 36 L 5.5 36 z"></path></svg>
+                                    </p>
+                                    
+                                </header>
+                                <p class="bold">Order History<br/><span>Manage billing information and view receipts</span></p>
+                                
+                                <table>
+                                    <thead>
+                                        <tr class="head">
+                                            <th>Date</th>
+                                            <th>Type</th>
+                                            <th>Receipt</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="tcontent">
+                                            <td>Oct. 21, 2021</td>
+                                            <td>Pro Annual</td>
+                                            <td><button>Download</button></td>
+                                        </tr>
+                                        <tr class="tcontent">
+                                            <td>Aug. 21, 2021</td>
+                                            <td>Pro Portfolio</td>
+                                            <td><button>Download</button></td>
+                                        </tr>
+                                        <tr class="tcontent">
+                                            <td>July 21, 2021</td>
+                                            <td>Sponsored Post</td>
+                                            <td><button>Download</button></td>
+                                        </tr>
+                                        <tr class="tcontent">
+                                            <td>Jun. 21, 2021</td>
+                                            <td>Sponsored Post</td>
+                                            <td><button>Download</button></td>
+                                        </tr>
+                                        <tr id="loadmore">
+                                            <td colspan="3"><a href="">Load more</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="bold">Payment Method<br/><span>Manage billing information and view receipts</span></p>
+                                <div class="visa-frame">
+                                    <p>
+                                        <img src="Frame 17(1).png">
+                                        <span>Visa ending in 2255</span> 
+                                    </p>
+                                    <button type="submit">Remove</button>
+                                </div>
+                                
+                            </div>
+                            <div class="main-2">
+                                <p>Your plan</p>
+                                <p class="bold-main-2">Pro Annual<br/><span> Renews on Nov. 2021</span></p>
+                                <button type="submit">Cancel Subscription</button>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
 </html>
